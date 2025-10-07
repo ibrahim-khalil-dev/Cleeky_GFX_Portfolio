@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brandif — Portfolio</title>
+    <meta name="description" content="Creative studio portfolio" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header id="site-header" class="header">
+      <div class="container header__inner">
+        <div class="brand">
+          <a href="#home" class="brand__logo" aria-label="Brandif home"
+            >Cleeky<span class="accent-dot">GFX.</span></a
+          >
+          <time id="clock" class="brand__clock" aria-label="current date time"
+            >Oct 05 • 08:25 AM</time
+          >
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-controls="site-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="site-nav" class="nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link is-active" href="#home">Home</a></li>
+            <li><a class="nav__link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav__link" href="#blog">Blog</a></li>
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+          <a class="btn btn--primary nav__cta" href="#contact"
+            >Start Project <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home" class="main">
+      <!-- Hero -->
+      <section class="section hero">
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <h1 class="hero__title">
+              Everyone’s Online.<br />
+              <span class="hero__title--accent">Not Everyone Wins.</span>
+            </h1>
+            <p class="hero__desc">
+              Brand help you cut through the noise — turn browsers into
+              believers and brands into true stories.
+            </p>
+            <div class="hero__actions">
+              <a href="#portfolio" class="btn btn--primary">View Our Work</a>
+            </div>
+          </div>
+
+          <figure
+            class="hero__media reveal"
+            aria-label="Creative team photo composition"
+          >
+            <!-- Accent pill shapes -->
+            <span class="pill pill--top">Photography</span>
+            <span class="pill pill--left">Social Media</span>
+            <span class="pill pill--right">Branding</span>
+
+            <div class="hero__photo hero__photo--a">
+              <img src="assets/imgi_3_hero-photo-scaled.jpg" alt="Hero Image" />
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="section portfolio">
+        <div class="container">
+          <header class="section__header reveal">
+            <h2 class="section__title">Explore Our Latest Portfolio</h2>
+          </header>
+
+          <div
+            class="filters reveal"
+            role="tablist"
+            aria-label="Portfolio filters"
+          >
+            <button role="tab" class="filter is-selected">All</button>
+            <button role="tab" class="filter">Branding</button>
+            <button role="tab" class="filter">Social Media</button>
+            <button role="tab" class="filter">Photography</button>
+            <button role="tab" class="filter">Web Design</button>
+            <button role="tab" class="filter">Video Editing</button>
+          </div>
+
+          <div class="portfolio__grid reveal">
+            <article class="card">
+              <img
+                src="assets/552373537_744303651941713_5584261378542639031_n.jpg"
+                alt="Brand Design placeholder"
+              />
+              <div class="card__meta">
+                <span class="badge">Event Post</span>
+                <h3 class="card__title">UK Porjects</h3>
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                src="assets/552373537_744303651941713_5584261378542639031_n.jpg"
+                alt="Branding placeholder"
+              />
+              <div class="card__meta">
+                <span class="badge">Event Post</span>
+                <h3 class="card__title">UK Porjects</h3>
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                src="assets/552461487_2041056213316032_3922865278539231525_n.jpg"
+                alt="Signage placeholder"
+              />
+              <div class="card__meta">
+                <span class="badge">Post Design</span>
+                <h3 class="card__title">Soufi Soul</h3>
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                src="assets/552516037_1701827980531813_3125962282242358432_n.jpg"
+                alt="Brand wall placeholder"
+              />
+              <div class="card__meta">
+                <span class="badge">Post Design</span>
+                <h3 class="card__title">Soufi Soul</h3>
+              </div>
+            </article>
+          </div>
+
+          <div class="center reveal">
+            <a href="#portfolio" class="btn btn--primary btn--pill"
+              >View Portfolio</a
+            >
+          </div>
+
+          <!-- Stats band -->
+          <div class="stats reveal">
+            <div class="stat">
+              <div class="stat__num">300+</div>
+              <div class="stat__label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">100+</div>
+              <div class="stat__label">Successful Collaborations</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">200+</div>
+              <div class="stat__label">Happy Customers</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services (big list) -->
+      <section id="about" class="section services">
+        <div class="container">
+          <ul class="services__list reveal" aria-label="Services">
+            <li><span class="bullet"></span>Branding</li>
+            <li><span class="bullet"></span>Social Media</li>
+            <li><span class="bullet"></span>Web Design</li>
+            <li><span class="bullet"></span>Photography</li>
+            <li><span class="bullet"></span>Videography</li>
+            <li><span class="bullet"></span>Content Creation</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Collaborations -->
+      <section class="section collabs">
+        <div class="container">
+          <h3 class="section__subtitle reveal collabs-head">
+            Successful Collaborations with
+          </h3>
+
+          <div class="logo-grid reveal">
+            <div class="logo">
+              <img
+                src="assets/imgi_84_kalamkari-building-mock-2048x1536.jpg"
+                alt="logo"
+              />
+            </div>
+            <div class="logo">
+              <img
+                src="assets/imgi_80_page-9th-SIGN-BOARD-1-2048x1536.jpg"
+                alt="logo"
+              />
+            </div>
+            <div class="logo">
+              <img src="assets/imgi_3_hero-photo-scaled.jpg" alt="logo" />
+            </div>
+            <div class="logo">
+              <img
+                src="assets/imgi_72_kalamkari-branding-16-2048x1536.jpg"
+                alt="logo"
+              /><span class="thin">Chicks</span>
+            </div>
+            <div class="logo">
+              <img src="assets/imgi_88_324342-2048x1536.jpg" alt="logo" />
+            </div>
+            <div class="logo">
+              <img
+                src="assets/imgi_80_page-9th-SIGN-BOARD-1-2048x1536.jpg"
+                alt="logo"
+              /><span class="thin">One</span>
+            </div>
+            <div class="logo">
+              <img
+                src="assets/imgi_80_page-9th-SIGN-BOARD-1-2048x1536.jpg"
+                alt="logo"
+              />
+            </div>
+            <div class="logo">
+              <img
+                src="assets/imgi_80_page-9th-SIGN-BOARD-1-2048x1536.jpg"
+                alt="logo"
+              />
+            </div>
+            <div class="logo">
+              <img src="/assets/imgi_76_plannn-2048x1536.jpg" alt="logo" />
+            </div>
+            <div class="logo">
+              <img
+                src="assets/imgi_80_page-9th-SIGN-BOARD-1-2048x1536.jpg"
+                alt="logo"
+              />
+            </div>
+            <div class="logo">
+              <img
+                src="assets/imgi_80_page-9th-SIGN-BOARD-1-2048x1536.jpg"
+                alt="logo"
+              />
+            </div>
+            <div class="logo">
+              <img
+                src="assets/imgi_80_page-9th-SIGN-BOARD-1-2048x1536.jpg"
+                alt="logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="section testimonials">
+        <div class="container testimonial__grid">
+          <div class="testimonial__card reveal">
+            <div class="quote-mark">“</div>
+            <blockquote class="testimonial__quote">
+              At Plan B, we wanted a brand that stood out just like our bold,
+              flavor-packed burgers — and Brandif made that happen. From visuals
+              to strategy, they captured our vibe perfectly. The branding looks
+              high-quality, and exactly what our food stands for.
+            </blockquote>
+            <footer class="testimonial__meta">
+              <div class="avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1544006659-f0b21884ce1d?q=80&w=256&auto=format&fit=crop"
+                  alt="Client avatar"
+                />
+              </div>
+              <div>
+                <div class="client">Waadoo</div>
+                <div class="role">Plan B Food Ventures</div>
+              </div>
+            </footer>
+          </div>
+
+          <div class="testimonial__visual reveal">
+            <div class="circle"></div>
+            <img
+              class="portrait"
+              src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=720&auto=format&fit=crop"
+              alt="Client portrait placeholder"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section id="blog" class="section blog">
+        <div class="container">
+          <h2 class="section__title reveal">Latest Blogs</h2>
+
+          <div class="blog__grid reveal">
+            <article class="blog-card">
+              <div class="blog-card__media">
+                <img
+                  src="assets/552373537_744303651941713_5584261378542639031_n.jpg"
+                  alt="Blog cover placeholder"
+                />
+                <span class="blog-card__date">Oct 6, 2025</span>
+              </div>
+              <div class="blog-card__body">
+                <h3 class="blog-card__title">
+                  Created an amazing design for my new UK based clients. It was
+                  a fun work.
+                </h3>
+                <a href="#" class="btn btn--ghost">Read More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / Footer top -->
+      <section id="contact" class="section cta">
+        <div class="container cta__grid">
+          <div class="cta__lead reveal">
+            <h2 class="cta__title">
+              Have a project?<br /><span class="underline">Let’s start.</span>
+            </h2>
+            <form class="cta__form" action="#" method="post">
+              <label class="sr-only" for="email">Enter your email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="input"
+                placeholder="Enter your email..."
+                required
+              />
+              <button
+                type="submit"
+                class="btn btn--primary btn--square"
+                aria-label="Submit email"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5 12h14M13 5l7 7-7 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <div class="footer__cols reveal">
+            <div class="col">
+              <h4 class="col__title">Pages</h4>
+              <ul class="col__list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4 class="col__title">Services</h4>
+              <ul class="col__list">
+                <li><a href="#">Logo & Branding</a></li>
+                <li><a href="#">Content Creation</a></li>
+                <li><a href="#">Video Editor</a></li>
+                <li><a href="#">Website Design</a></li>
+                <li><a href="#">Social Media</a></li>
+                <li><a href="#">Photos • Photography</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4 class="col__title">Stay in touch with us!</h4>
+              <div class="socials">
+                <a class="icon" aria-label="Behance" href="#"
+                  ><svg viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M14 7h5v2h-5V7m-9 1h3a4 4 0 0 1 0 8H5V8m3 3H7v2h1a1 1 0 0 0 0-2m10 0a3 3 0 0 0-5 2.8A3 3 0 0 0 18 16a2.6 2.6 0 0 0 2-.9l-1-.9a1.6 1.6 0 0 1-1 .3 1.4 1.4 0 0 1-1.4-1.2H21c.3-1.9-1.2-3.3-3-3.3m-2 2a1.4 1.4 0 0 1 1.4-1.3A1.4 1.4 0 0 1 18 13h-2Z"
+                    /></svg
+                ></a>
+                <a class="icon" aria-label="Dribbble" href="#"
+                  ><svg viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M12 2a10 10 0 1 0 .1 0Zm6.8 6.6A8 8 0 0 1 19.9 12c-2.7-.6-5-.4-7.2.4-.3-.7-.6-1.4-1-2.1 2.8-1.2 5-1.6 6.9-1.7ZM12 4a8 8 0 0 1 5.4 2.1c-1.9.1-4.3.6-7.3 1.8A43 43 0 0 0 7.9 5.3 8 8 0 0 1 12 4ZM6 6.2a41 41 0 0 1 2.1 2.7 40 40 0 0 0-5.4 4.2A8 8 0 0 1 6 6.2ZM4.2 15a8 8 0 0 1-.2-2.1c1.9-2 3.8-3.4 5.7-4.4.4.6.7 1.3 1.1 2-2.4 1.1-4.4 2.8-6.6 4.5Zm1.8 3.1a8 8 0 0 1-1.3-1.5c2.1-1.7 4.1-3.3 6.6-4.3l.4 1c.4.9.7 1.7.9 2.6-2.4.3-4.5.9-6.6 2.2ZM12 20a7.9 7.9 0 0 1-2.2-.3c2.1-1.3 4.3-1.9 6.8-2.1.4 1.2.6 2.4.7 3.6A8 8 0 0 1 12 20Zm5.3.4c-.1-1-.3-2-.7-3.1 1.6.1 3 .4 4.5.8A8 8 0 0 1 17.3 20.4Z"
+                    /></svg
+                ></a>
+                <a class="icon" aria-label="LinkedIn" href="#"
+                  ><svg viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M6.94 8.5V21H3V8.5h3.94ZM4.98 3a2.29 2.29 0 1 1 0 4.58A2.29 2.29 0 0 1 4.98 3ZM21 13.59V21h-3.94v-6.82c0-1.62-.58-2.72-2.04-2.72-1.11 0-1.77.75-2.06 1.47-.11.27-.14.63-.14 1v7.07H8.9s.05-11.47 0-12.66h3.94v1.79c.52-.8 1.45-1.94 3.53-1.94 2.58 0 4.62 1.68 4.62 5.29Z"
+                    /></svg
+                ></a>
+                <a class="icon" aria-label="Instagram" href="#"
+                  ><svg viewBox="0 0 24 24">
+                    <path
+                      fill="currentColor"
+                      d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7m5 3.5A5.5 5.5 0 1 1 6.5 12 5.5 5.5 0 0 1 12 7.5m0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5m5-3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"
+                    /></svg
+                ></a>
+              </div>
+            </div>
+
+            <div class="col col--extra">
+              <div class="footer-widget">
+                <div class="widget__title">Quick Links</div>
+                <ul class="col__list">
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <div class="footer__to-top">
+                  <a href="#home" class="to-top" aria-label="Back to top">
+                    <span class="to-top__shaft"></span>
+                    <span class="to-top__arrow"></span>
+                  </a>
+                  <span class="to-top__label">Back to top</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer bar -->
+    <footer class="footer">
+      <div class="container footer__bar">
+        <div class="legal">© Copyright 2025 Brandif — All Rights Reserved.</div>
+        <div class="links">
+          <a href="#">Terms & Conditions</a>
+          <span aria-hidden="true">•</span>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll Arrow
+    <div class="scroll-arrow"></div> -->
+    <!-- Floating Chat -->
+    <div class="chat-box">
+      <div class="socials">
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+            alt="WhatsApp"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"
+            alt="TikTok"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+            alt="LinkedIn"
+        /></a>
+        <a href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"
+            alt="Instagram"
+        /></a>
+      </div>
+      <div class="chat-toggle"><i class="fa-solid fa-comment"></i></div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
