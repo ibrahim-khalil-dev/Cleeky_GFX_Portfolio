@@ -725,6 +725,30 @@ img {
 .input::placeholder {
   color: var(--bg);
 }
+.col__title {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.socials {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.socials img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.socials a:hover img {
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+
 .input {
   flex: 1;
   min-width: 0;
